@@ -27,15 +27,21 @@ However, you can run ProvBuild in a VirtualBox image:
 ### Setup of the tool 
 1. Check-out the repository.  The following repo has very minor modifications from the original to make it run in a vm:
    ```
-   git clone https://github.com/fbanados/ProvBuild.git
+   > git clone https://github.com/fbanados/ProvBuild.git
    ```
 2. Move to the appropriate directory:
    ```
-   cd ProvBuild
+   > cd ProvBuild
    ```
-3. 
-
-You can now jump to the "ProvBuild Interface and Demo" section.
+3. Run the script to collect all dependencies:
+   ```
+   > ./initialize.sh
+   ```
+4. Identify the IP address of the VM in the second interface (that is accessible from your computer):
+   ```
+   > ip a
+   ```
+You can now jump to the "ProvBuild Interface and Demo" section.  Note that Step 1 will initialize the server, but not open the browser, you will need to identif
    
 
 ## Tool
