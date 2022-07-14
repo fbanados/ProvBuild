@@ -35,7 +35,7 @@ function saveEdits() {
    <!-- Sidebar -->
    <div class="w3-sidebar w3-light-grey w3-bar-block" style="width:20%">
       <h3 class="w3-bar-item w3-light-blue w3-padding-16">Actions</h3>
-      <form action="http://localhost:5000/normal" enctype="multipart/form-data" method="post"></form>
+      <form action="{{request.url_root}}/normal" enctype="multipart/form-data" method="post"></form>
         <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
         <form action="/runnormal" method="post">
             <button class="w3-bar-item w3-button w3-grey w3-large w3-padding-8 w3-center" name="script" onclick="saveEdits()" id="submitNormal" type="submit" ><b>Run</b></button>

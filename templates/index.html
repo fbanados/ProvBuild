@@ -30,7 +30,7 @@
             <p class="lead"></p>
 
             <p>ProvBuild Mode</p>
-            <form action = "http://localhost:5000/provbuild" method = "POST"
+	    <form action = "{{request.url_root}}/provbuild" method = "POST"
                enctype = "multipart/form-data">
                <div class="container">
                   User name:<br>
@@ -42,7 +42,7 @@
             </form>
             <br>
             <p>Normal Mode</p>
-            <form action = "http://localhost:5000/normal" method = "POST" 
+	    <form action = "{{request.url_root}}/normal" method = "POST" 
                enctype = "multipart/form-data">
                <div class="container">
                   User name:<br>

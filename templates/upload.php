@@ -16,7 +16,7 @@
             
             <p class="lead"></p>
 
-            <form action = "http://localhost:5000/uploader" method = "POST" 
+            <form action = "{{request.url_root}}/uploader" method = "POST" 
                enctype = "multipart/form-data">
                <input type = "file" name = "file" />
                <input type = "submit"/>
