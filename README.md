@@ -41,7 +41,7 @@ However, you can run ProvBuild in a VirtualBox image:
    ```
    > ip a
    ```
-You can now jump to the "ProvBuild Interface and Demo" section.  Note that Step 1 will initialize the server, but not open the browser, you will need to identif
+You can now jump to the "ProvBuild Interface and Demo" section.  Note that Step 1 will initialize the server, but not open the browser. You need to access the tool in your browser at `VM_IP:5000`. 
    
 
 ## Tool
