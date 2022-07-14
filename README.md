@@ -7,6 +7,37 @@ ProvBuild is a data analysis environment that uses change impact analysis to imp
 
 ProvBuild obtains provenance using noWorkflow, a Python-based provenance capture tool. Using the provenance information, ProvBuild identifies dependencies between inputs, program statements, functions, variables, and outputs, allowing it to precisely identify the sections of a script that must be re-executed to correctly update results after a modification. ProvBuild then generates a customized script, the _ProvScript_, that contains only those sections affected by a modification.
 
+## Instructions to Run in a VM
+As Python 2 has been deprecated, it is not immediately available on new Mac OS versions.
+However, you can run ProvBuild in a VirtualBox image:
+
+### Setup of the VM
+
+1. Download an [Ubuntu Server 22.04 LTS](https://releases.ubuntu.com/22.04/ubuntu-22.04-live-server-amd64.iso) ISO image.
+2. Create a new VirtualBox VM.
+3. **Before installing**, add a second network interface (to access from your machine):
+   - Go to `Settings -> Network -> Adapter 2`
+   - Check `Enable Network Adapter`
+   - in the `Attached to:` drop-down menu, select `Host-only Adapter`, which will create a local switch between the VM and your machine.
+   - Click `OK`
+4. Install Ubuntu, by running the machine, loading the ISO and following the instructions.
+   - Choose the "Ubuntu Server" option (not minimized)
+   - You do not need to select any snaps.
+
+### Setup of the tool 
+1. Check-out the repository.  The following repo has very minor modifications from the original to make it run in a vm:
+   ```
+   git clone https://github.com/fbanados/ProvBuild.git
+   ```
+2. Move to the appropriate directory:
+   ```
+   cd ProvBuild
+   ```
+3. 
+
+You can now jump to the "ProvBuild Interface and Demo" section.
+   
+
 ## Tool
 ProvBuild is built on top of noWorkflow (Version 1.11.2). Check out [noWorkflow's Github](https://github.com/gems-uff/noworkflow) for more information details.
 
